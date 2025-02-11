@@ -1,5 +1,5 @@
 {
-  "name": "@rnmapbox/maps",
+  "name": "@nikitashevchuk/rnmapbox-temporary-fix",
   "description": "A Mapbox react native module for creating custom maps",
   "version": "10.1.33",
   "publishConfig": {
@@ -16,7 +16,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/rnmapbox/maps"
+    "url": "https://github.com/NikitaShevchuk-CubeX/maps"
   },
   "main": "lib/commonjs/index",
   "module": "lib/module/index",

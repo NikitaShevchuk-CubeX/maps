@@ -154,23 +154,7 @@ class RNMBXCameraChanged : RNMBXEvent, RCTEvent {
 }
 
 @objc(RNMBXMapView)
-open class RNMBXMapView: UIView, RCTInvalidating {
-  
-  public func invalidate() {
-    self.removeAllFeaturesFromMap(reason: .ViewRemoval)
-
-#if RNMBX_11
-    cancelables.forEach { $0.cancel() }
-    cancelables.removeAll()
-#endif
-    
-    _mapView.gestures.delegate = nil
-    _mapView.removeFromSuperview()
-    _mapView = nil
-    
-    self.removeFromSuperview()
-  }
-  
+open class RNMBXMapView: UIView {
   var imageManager: ImageManager = ImageManager()
 
   var tapDelegate: IgnoreRNMBXMakerViewGestureDelegate? = nil

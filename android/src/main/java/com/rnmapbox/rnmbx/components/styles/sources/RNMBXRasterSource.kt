@@ -34,8 +34,4 @@ class RNMBXRasterSource(context: Context?) : RNMBXTileSource<RasterSource?>(cont
     companion object {
         const val DEFAULT_TILE_SIZE = 512
     }
-
-    fun setSourceBounds(value: Array<Double>) {
-        bounds = value
-    }
 }
